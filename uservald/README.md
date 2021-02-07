@@ -1,7 +1,6 @@
 # Getting Started with Create React App
 
-deployed link
-https://findclub.herokuapp.com/
+deployed link:https://registerationapp.herokuapp.com/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
