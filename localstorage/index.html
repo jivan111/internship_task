@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="savelocal.js" defer></script>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      .box {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 1280px;
+        align-items: center;
+        margin: auto;
+        margin-top:50vh;
+        transform: translateY(-50%);
+      }
+      .box > .input > input {
+        width: 360px;
+        height: 40px;
+        font-size: 1rem;
+
+      }
+      .box > .list {
+        margin-top: 10px;
+        display: flex;
+        width: 720px;
+        justify-content: space-between;
+      }
+      .box > .list > div {
+        width: 49%;
+        padding: 6px;
+        min-height: 80px;
+        text-align: center;
+
+        align-self: flex-start;
+        max-height: 400px;
+        background-color: #747474;
+        overflow-y: auto;
+        color: #f0f0f0;
+      }
+      .box > .list > div>ul{
+          text-align: left;
+          list-style: none;
+      }
+      .movie-class {
+        display: flex;
+        width: 720px;
+        justify-content: space-between;
+      }
+      .movie-class > div {
+        width: 30%;
+        margin-top: 20px;
+        text-align: center;
+      }
+       .movie-class>div>ul {
+        min-height: 150px;
+        background-color:#1D2733;
+        color: #f0f0f0;
+        text-align: left;
+        list-style: none;
+
+
+
+       }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="input">
+        <input
+          type="text"
+          placeholder="First Character"
+          name="first_movie_character"
+        />
+        <input
+          type="text"
+          placeholder="Second Cast"
+          name="second_movie_character"
+        />
+      </div>
+      <div class="list">
+        <div class="li1">No First Movie Character...</div>
+        <div class="li2">No Second Movie Character...</div>
+      </div>
+      <div class="movie-class">
+        <div class="class1">
+          <span>Cast in First Movie</span>
+          <ul></ul>
+        </div>
+        <div class="class2">
+          <span>Cast in both movies</span>
+          <ul></ul>
+        </div>
+        <div class="class3">
+          <span>cast in Second movie</span>
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

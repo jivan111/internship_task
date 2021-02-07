@@ -1,0 +1,42 @@
+.date-container{
+    position: absolute;
+    background-color:#303339;
+    color: white;
+    height: 180px;
+    min-width: 60px;
+    list-style: none;
+    overflow-y: scroll;
+    text-align: left;
+    overflow-x: hidden;
+    bottom: 25px;
+    cursor: pointer;
+    z-index: 2;
+    padding: 4px;
+}
+.date-container>li:hover{
+    color: white;
+    background-color:#6969dd;
+}
+.date-container>li{
+    height: 30px;
+    line-height: 30px;
+    /* text-align: center; */
+    color: white;
+    
+    
+}
+.date-container::-webkit-scrollbar {
+    width: 0px; 
+  
+}
+.day{
+ left: 0px;
+}
+.month{
+ left: 100px;
+ 
+}
+.year{
+ right: 0px;
+}
+

@@ -1,0 +1,128 @@
+html {
+  box-sizing: border-box;
+  padding: 0;
+}
+.overlay-submission{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color:rgba(0, 0, 0,0.7);
+  z-index: 2;
+}
+.overlay-submission::before{
+  content: " CODING BUDDDY... ";
+  position: absolute;
+  top:calc( 50% - 25px);
+  left:calc( 50% - 75px);
+  filter: blur(0px);
+  color: rgb(10, 103, 241);
+  /* background-color: #7289da; */
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  transform-origin: center ;
+  animation: loading 3s infinite ;
+}
+@keyframes loading{
+  0%{
+    transform:scale(1)   rotate(0deg );
+    
+  }
+  50%{
+    transform:scale(2)   rotate(360deg);
+    
+  }
+  100%{
+    transform: scale(1) ;
+  }
+
+} 
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #36393f;
+  width: 400px;
+  height: 600px;
+  transform: translate(-50%, -50%);
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px 1px black;
+}
+.form-container>input{
+  background-color: #36393f;
+}
+.date{
+  position: relative;
+    width: 350px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    /* background-color: aqua; */
+}
+.date>input:nth-child(2){
+    margin: 10px;
+    flex-grow: 3;
+}
+
+
+.date>input{
+ width: 90px;
+ height: 40px;
+ outline: none;
+ border: 1px solid black;
+ /* outline: none; */
+   background-color: #303339;
+  color: white;
+  font-size: 1rem;
+border: none;
+border-radius: 2px;
+}
+
+h3 {
+  color: white;
+}
+.form-container > input {
+  width: 350px;
+  height: 50px;
+  margin: 10px;
+  background-color: #303339;
+  color: white;
+  font-size: 1rem;
+  
+}
+.form-container>input:focus {
+  outline: none;
+  outline: 3px solid white;
+}
+input::plaaceholder {
+  /* color: white; */
+}
+button {
+  width: 350px;
+  height: 40px;
+  margin: 10px;
+  background-color: #7289da;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+
+}
+.list{
+    position: absolute;
+    color: white;
+    background-color: aqua;
+    width: 100px;
+    top: 1000px;
+}

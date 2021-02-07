@@ -1,0 +1,19 @@
+.body{
+    max-width: 60%;
+    margin: 20px auto;
+    max-height:80vh;
+    overflow-y: auto;
+
+}
+.loading{
+    text-align: center;
+    color: blueviolet;
+}
+.body::-webkit-scrollbar{
+   display: none;
+}
+@media(max-width:400px){
+    .body{
+    max-width: 95%;
+}
+}
